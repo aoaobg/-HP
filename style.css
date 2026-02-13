@@ -9,6 +9,10 @@ html {
   scroll-margin-top: 200px; /* header 高さ */
 }
 
+a{
+    text-decoration: none;
+}
+
 
 #information{
     scroll-margin-top: 00px;
@@ -464,3 +468,6 @@ body.no-scroll {
     overflow: hidden;
   }
   
+  #menu-btn-check {
+    display: none;
+}
