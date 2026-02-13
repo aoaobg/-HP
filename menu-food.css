@@ -19,7 +19,7 @@ body{
 
 .main{
     writing-mode: vertical-rl;
-    width: auto;
+    width: 100%;
         height: auto;
         display: block;
         line-height: 65px;
