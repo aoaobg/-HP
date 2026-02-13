@@ -58,7 +58,7 @@ body{
 
 .button{
     border: #000 1px solid;
-    width: 300px;
+    width: 250px;
 }
 
 .kushi-btn{
@@ -72,7 +72,6 @@ body{
         writing-mode: vertical-rl;
         width: 100%;
         height: auto;
-
         line-height: 65px;
         font-size: 20px;
         margin: 0 auto;
