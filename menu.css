@@ -46,13 +46,14 @@ body{
 }
 
 .food-btn{
-    width: 1000px;
+    width: 90%;
     display: flex;
     text-align: center;
     margin: 0 auto 100px;
     gap: 80px;
     padding-top: 70px;
     font-size: 20px;
+    justify-content: center;
 }
 
 .button{
