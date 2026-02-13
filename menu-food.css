@@ -1,0 +1,105 @@
+body{
+    scroll-behavior: auto;
+}
+
+.kushi-btn{
+    background: #fff;
+    color: #000;
+}
+
+.main-btn{
+    background: #000;
+    color: #fff;
+}
+
+#food-menu{
+    scroll-margin-top: 70px; /* header 高さ */
+  }
+  
+
+.main{
+    writing-mode: vertical-rl;
+    width: auto;
+        height: auto;
+        display: block;
+        line-height: 65px;
+        font-size: 20px;
+        margin: 0 auto;
+        font-weight: lighter;
+        margin-bottom: 80px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 100px;
+}
+
+.main span{
+    margin-top: 80px;
+}
+
+.food-menu{
+    height: 1300px;
+}
+
+.main-2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.sasimi{
+    writing-mode: vertical-rl;
+    width: auto;
+    height: auto;
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.sasimi p{
+    padding-top: 40px;
+}
+
+.sasimi h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sarada{
+    writing-mode: vertical-rl;
+    width: auto;
+    height: auto;
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.sarada p{
+    padding-top: 40px;
+}
+
+.sarada h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sime{
+    writing-mode: vertical-rl;
+    width: auto;
+    height: auto;
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.sime p{
+    padding-top: 40px;
+}
+
+.sime h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+

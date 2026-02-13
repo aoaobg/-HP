@@ -1,0 +1,465 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#about,
+#Commitment,
+#news
+#food-menu{
+  scroll-margin-top: 200px; /* header 高さ */
+}
+
+
+#information{
+    scroll-margin-top: 00px;
+}
+
+
+body {
+    font-family: "Noto Serif JP", serif;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+  }
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    height: 100px;
+    text-align: center;
+    z-index: 9999; /* 他の要素より大きく */
+}
+
+header img{
+    height: 100px;
+    width: auto;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #000;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 10px;
+}
+.menu-btn span:after {
+    top: 10px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #000;
+    text-align: center;
+}
+
+.menu-content img{
+   margin-top: 60px;
+   height: 80px;
+}
+.menu-content ul {
+    padding: 100px 10px 0;
+    
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: rgba(0, 0, 0, 0.80);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+/*ここまでハンバーガーメニュー*/
+
+
+
+.main-vis img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.news{
+    width: 100%;
+    height: 600px;
+    margin-top: 300px;
+}
+
+.news h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+}
+
+.news p{
+    font-size: 18px;
+}
+
+.ns{
+    width: 80%;
+    height: 800px;
+    margin: 150px;
+}
+
+.ns ul{
+    width: 60%;
+    height: 400px;
+    margin: 0 auto 0;
+    padding: 40px;
+}
+
+.ns ul li{
+    
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px  ;
+}
+
+.ns span{
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.about img{
+height:400px;
+width: auto;
+filter: brightness(60%);
+margin-left: 100px;
+}
+
+.about{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 500px;
+    display: flex;
+    line-height: 3em;
+    
+}
+
+.about-com{
+    width: 550px;
+    margin: 0 auto; 
+    padding-top: 130px;
+}
+.about h2{
+    font-size: 24px;
+    width: 400px;
+    border-bottom: #fff solid 1px;
+}
+
+.about p{
+font-size: 15px;
+}
+
+.Commitment{
+    width: 100%;
+    height: auto;
+    margin-bottom: 300px;
+    font-size: 18px;
+}
+
+.Commitment img{
+    width: 300px;
+    height: auto;
+}
+
+.Commitment h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.Commitment span{
+    font-size: 40px;
+}
+
+.com-sauce{
+    display: flex;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 300px;
+}
+
+.sauce-about{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.sauce-about p{
+    margin-top: 60px;
+    margin-left:40px ;
+    line-height: 2em;
+}
+
+
+.com-sauce img{
+    height: 300px;
+    width: auto;
+}
+
+.com-solt{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 300px;
+    
+}
+
+.solt-about{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.solt-about p{
+    margin-top: 60px;
+    margin-left:40px ;
+    line-height: 2em;
+}
+
+.com-solt img{
+    height: 400px;
+    width: auto;
+    margin-left: 10%;
+}
+
+.com-cl{
+    display: flex;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 50px;
+    
+}
+
+.cl-about{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.cl-about p{
+    margin-top: 60px;
+    margin-left:40px ;
+    line-height: 2em;
+}
+
+.com-cl img{
+    height: 400px;
+    width: 350px;
+}
+
+
+/*ここからスライドショー*/
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 500px;
+    text-align: center;
+  }
+  
+  .container h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .swiper{
+    margin-top: 100px;
+  }
+
+  /* スライダーのwrapper */
+  .infinite-slider .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  
+  /* スライド */
+  .infinite-slider .swiper-slide {
+    height: 250px !important; /* 高さを指定 */
+    width: auto !important;
+  }
+  
+  /* スライド内の画像 */
+  .infinite-slider .swiper-slide img {
+    width: auto;
+    height: 100%;
+    margin-right: 50px;
+  }
+
+
+  /*ここまでスライドショー*/
+
+  .menu{
+    width: 100%;
+    height: 30px;
+    margin-top:100px;
+    margin-bottom: 300px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1.25rem 4rem;
+    text-decoration: none;
+    transition: .3s;
+    width: 300px;
+}
+
+.button:hover {
+    opacity: .9;
+}
+
+.information{
+    width: 80%;
+    height: 500px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 300px;
+    
+}
+
+.information h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inf{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-weight: light;
+    margin-left: 300px;
+}
+
+.line{
+width: 100%;
+padding-top: 40px;
+}
+
+.line p{
+    width: 70%;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 20px;
+}
+
+.line span{
+    margin-right: 100px;
+}
+
+.span-2{
+margin-left: 180px;
+font-size: 15px;
+}
+
+.span-3{
+    margin-left: 80px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    color: #fff;
+
+   
+}
+
+/* メニュー表示中は背景スクロール禁止 */
+body.no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+  

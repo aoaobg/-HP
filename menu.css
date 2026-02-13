@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: auto;
+}
+
+body{
+    background-color: #FFF8E8;
+    color: #000;
+}
+
+.menu-logo{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#food-menu{
+    scroll-margin-top: 70px; /* header 高さ */
+  }
+  
+
+.menu-logo img{
+    width: 100%;
+    height: 200px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+  filter: brightness(60%);
+  
+}
+
+.menu-logo h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.food-menu{
+    width: 100%;
+    height: 630px;
+    background: #fff;
+    border: #000 1px solid;
+    margin-bottom: 60px;
+}
+
+.food-btn{
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto 100px;
+    gap: 80px;
+    padding-top: 70px;
+    font-size: 20px;
+}
+
+.button{
+    border: #000 1px solid;
+}
+
+.kushi-btn{
+    background: #000;
+    color: #fff;
+}
+
+
+
+.kushi{
+        writing-mode: vertical-rl;
+        width: auto;
+        height: auto;
+        display: block;
+        line-height: 65px;
+        font-size: 20px;
+        margin: 0 auto;
+        font-weight: bold;
+        margin-bottom: 80px;
+}
+
+.kushi span{
+    margin-top: 80px;
+}
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+}
+
+footer p{
+    padding-top: 15px;
+}
+
+
+
+
+  
+  
+  
