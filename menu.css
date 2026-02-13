@@ -7,6 +7,12 @@ body{
     color: #000;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .menu-logo{
     width: 100%;
     height: auto;

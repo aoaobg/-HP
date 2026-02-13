@@ -1,6 +1,12 @@
 html{
     scroll-behavior: auto;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 .drink-btn{
     background: #000;
     color: #fff;
