@@ -57,6 +57,7 @@ body{
 
 .button{
     border: #000 1px solid;
+    width: 300px;
 }
 
 .kushi-btn{
@@ -68,19 +69,29 @@ body{
 
 .kushi{
         writing-mode: vertical-rl;
-        width: auto;
+        width: 100%;
         height: auto;
-        display: block;
+
         line-height: 65px;
         font-size: 20px;
         margin: 0 auto;
         font-weight: bold;
         margin-bottom: 80px;
+        display: flex;
+        justify-content: center;  /* 横中央 */
+         
 }
 
 .kushi span{
     margin-top: 80px;
 }
+
+.kushi-menu{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
 
 footer{
     margin-top: 30px;
