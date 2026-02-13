@@ -11,6 +11,7 @@ html {
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 
@@ -306,7 +307,7 @@ font-size: 15px;
 
 .com-solt img{
     height: 400px;
-    width: auto;
+    width: 300px;
     margin-left: 10%;
 }
 
@@ -457,7 +458,7 @@ footer{
     height: 40px;
     background: #000;
     color: #fff;
-
+    
    
 }
 
