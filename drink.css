@@ -57,9 +57,7 @@ body {
     margin-top: 30px;
 }
 
-.A h2{
-    
-}
+
 
 .F{
     display: flex;
@@ -102,8 +100,10 @@ h3{
 
 .L{
     border-bottom: none;
+    height: auto;
 }
 
 .T{
     gap: 30px;
 }
+
