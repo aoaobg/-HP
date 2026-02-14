@@ -66,17 +66,13 @@ body {
     text-orientation: upright;
     margin: 0 auto;
     border-bottom: 1px solid #000;
-    display: flex;
     gap: 40px;
     
 }
 
-.beer{
-   
-}
-
-.highball{
-
+.F > div {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 .hoppy{
