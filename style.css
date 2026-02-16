@@ -41,7 +41,7 @@ body {
 }
 #about,
 #Commitment,
-#news
+#news,
 #food-menu{
   scroll-margin-top: 200px; /* header 高さ */
 }
@@ -89,7 +89,7 @@ header img{
     width: 60px;
     justify-content: center;
     align-items: center;
-    z-index: 90;
+    z-index:90;
     background-color: #000;
 }
 .menu-btn span,
@@ -257,6 +257,8 @@ margin-left: 100px;
     line-height: 3em;
     
 }
+
+
 
 .about-com{
     width: 550px;
@@ -449,7 +451,6 @@ font-size: 15px;
     margin: 0 auto;
     margin-bottom: 150px;
     margin-top: 300px;
-    
 }
 
 .information h2{
@@ -496,8 +497,6 @@ footer{
     height: 40px;
     background: #000;
     color: #fff;
-    
-   
 }
 
 /* メニュー表示中は背景スクロール禁止 */
@@ -510,3 +509,230 @@ body.no-scroll {
   #menu-btn-check {
     display: none;
 }
+
+@media (max-width: 768px){
+
+    /* ===== 全体 ===== */
+    body{
+      font-size: 14px;
+    }
+  
+    header{
+      height: 70px;
+    }
+  
+    header img{
+      height: 70px;
+    }
+
+    .menu-btn{
+        height: 40px;
+        width: 40px;
+    }
+
+    .main-vis img{
+        height: 300px;
+        overflow: hidden;
+        width: 900px;
+    }
+  
+    /* ===== お知らせ ===== */
+    .news{
+        margin-top: 200px;
+    }
+    .ns{
+        width: 80%;
+        margin: 80px auto;
+        
+      }
+      
+      .ns ul{
+        width: 100%;
+        padding: 0;
+        font-size: 14px;
+      }
+      
+      .ns ul li{
+        width: 100%;
+        max-width: none;
+        padding: 15px 0;
+      }
+
+      .ns span{
+        margin-right: 20px;
+        margin-left: 0;
+      }
+
+      .ns ul li p{
+        display: block;
+      }
+    
+      .ns ul li span{
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+    /* ===== 私たちの想い ===== */
+    .about{
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 300px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .about h2{
+       text-align: center;
+        margin-bottom: 30px;
+       border-bottom: #fff 1px solid;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+  
+    .about img {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        right: 40px;
+        z-index: -9999;
+        top: 0;
+        display: none;
+        
+      }
+      
+  
+    .about-com{
+      width: 100%;
+      padding-top: 40px;
+    }
+    
+  
+
+
+        /* セクション全体を縦並びに */
+        .com-sauce,
+        .com-solt,
+        .com-cl{
+          flex-direction: column;
+          height: auto;
+          margin-bottom: 100px;
+          position: relative;
+          margin-bottom: 200px;
+        }
+      
+        /* タイトル＋画像を横並びにする */
+        .sauce-about,
+        .solt-about,
+        .cl-about{
+          display: flex;
+          flex-direction: column;  /* ← ここがポイント */
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+
+        }
+      
+        /* h2と画像を横並び */
+        .sauce-about h2,
+        .solt-about h2,
+        .cl-about h2{
+          -webkit-writing-mode: vertical-lr; /* Safari */
+          writing-mode: vertical-lr;
+          text-orientation: upright;
+          font-size: 24px;
+          margin: 0;
+          order: -1;
+          margin-left: 50px;
+          margin-bottom: 60px;
+        }
+      
+        /* 画像をh2の横に持ってくる */
+        .com-sauce,
+        .com-solt,
+        .com-cl{
+          display: flex;
+        }
+      
+        .com-sauce img,
+        .com-solt img,
+        .com-cl img{
+          width: 200px;
+          height: auto;
+          margin-left: 20px;
+          position: absolute;
+          right: 30px;
+        }
+
+        .com-sauce img{
+            width: 240px;
+            top: 40px;
+        }
+
+        .com-solt img{
+            width: 180px;
+            top: 30px;
+        }
+
+        .com-cl img{
+            top: 30px;
+        }
+      
+        /* 説明文は下に */
+        .sauce-about p,
+        .solt-about p,
+        .cl-about p{
+          margin-top: 20px;
+          line-height: 1.8;
+        }
+      
+
+        .container{
+            margin-top: 200px;
+        }
+
+        .container h2{
+            font-size: 25px;
+
+        }
+
+        .container img {
+            width: 150px;
+        }
+
+  
+    /* ===== 店舗情報 ===== */
+    .information{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .information p{
+        font-size: 18px;
+
+    }
+    .inf{
+      width: 70%;
+      margin: 0 auto;
+      
+    }
+  
+    .line span{
+      margin-right: 20px;
+    }
+    
+    .line p{
+        width: 100%;
+    }
+
+    .span-2{
+        margin-left: 90px;
+    }
+
+    .span-3{
+        margin-left: 70px;
+    }
+  }
+  
