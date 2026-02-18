@@ -118,3 +118,118 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 480px){
+    .kushi-btn{
+        background: #fff;
+        color: #000;
+    }
+    
+    .main-btn{
+        background: #000;
+        color: #fff;
+    }
+    
+    #food-menu{
+        scroll-margin-top: 70px; /* header 高さ */
+      }
+      
+      .main{
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        border: none;
+    
+        font-size: 16px;
+    }
+    
+    .food-menu{
+    height: auto;
+    }
+        .main-menu{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        
+        
+    
+    
+    .main-menu p{
+        
+        line-height: 1.8;
+    }
+    
+    .main span{
+        margin-top: 80px;
+    }
+    
+    
+    .main-2{
+        width: 85%;
+        margin: 0 auto;
+        
+    }
+    
+    .sasimi{
+        width: auto;
+        height: auto;
+        display: block;
+        font-size: 16px;
+        margin: 0 auto;
+       margin-bottom: 60px;
+    }
+    
+    .sasimi p{
+        padding-top: 40px;
+    }
+    
+    .sasimi h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .sarada{
+       
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .sarada p{
+        padding-top: 40px;
+    }
+    
+    .sarada h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .sime{
+        width: auto;
+        height: auto;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 80px;
+    }
+    
+    .sime p{
+        padding-top: 40px;
+    }
+    
+    .sime h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
+

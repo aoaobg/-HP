@@ -315,6 +315,7 @@ font-size: 15px;
     margin-top: 60px;
     margin-left:40px ;
     line-height: 2em;
+    width: 42ch;
 }
 
 
@@ -343,6 +344,7 @@ font-size: 15px;
     margin-top: 60px;
     margin-left:40px ;
     line-height: 2em;
+    width: 36ch;
 }
 
 .com-solt img{
@@ -371,6 +373,7 @@ font-size: 15px;
     margin-top: 60px;
     margin-left:40px ;
     line-height: 2em;
+    width: 40ch;
 }
 
 .com-cl img{
@@ -510,60 +513,188 @@ body.no-scroll {
     display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 480px){
 
-    /* ===== 全体 ===== */
-    body{
-      font-size: 14px;
-    }
-  
     header{
-      height: 70px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        height: 60px;
+        text-align: center;
+        z-index: 9999; /* 他の要素より大きく */
+       
+        margin: 0 auto;
     }
-  
+    
     header img{
-      height: 70px;
+        height: 60px;
+        width: auto;
+        margin: 0 auto;
     }
-
-    .menu-btn{
-        height: 40px;
-        width: 40px;
+    
+    .menu-btn {
+        position: fixed;
+        top: 0px;
+        right: 20px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index:90;
+        background-color: #000;
     }
-
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 30px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 10px;
+    }
+    .menu-btn span:after {
+        top: 10px;
+    }
+    
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        background-color: #000;
+        text-align: center;
+    }
+    
+    .menu-content img{
+       margin-top: 60px;
+       height: 80px;
+    }
+    .menu-content ul {
+        padding: 100px 10px 0;
+        
+    }
+    .menu-content ul li {
+        border-bottom: solid 1px #ffffff;
+        list-style: none;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+        color:#ffffff;
+        text-decoration: none;
+        padding: 9px 15px 10px 0;
+        position: relative;
+    }
+    .menu-content ul li a::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+    
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: rgba(0, 0, 0, 0.80);
+        transition: all 0.5s;/*アニメーション設定*/
+    }
+    
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;/*メニューを画面内へ*/
+    }
+    
+    /*ここまでハンバーガーメニュー*/
+    
+    
+    
     .main-vis img{
-        height: 300px;
-        overflow: hidden;
-        width: 900px;
+        width: 100%;
+        height: auto;
     }
-  
-    /* ===== お知らせ ===== */
+    
+    
+    
     .news{
+        width: 100%;
+        height: 600px;
         margin-top: 200px;
     }
+    
+    .news h2{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .news p{
+        font-size: 14px;
+    }
+    
     .ns{
+        height: 800px;
         width: 80%;
         margin: 80px auto;
-        
-      }
-      
-      .ns ul{
+    }
+    
+    .ns ul{
+        height: 400px;
+        margin: 0 auto 0;
         width: 100%;
         padding: 0;
         font-size: 14px;
-      }
-      
-      .ns ul li{
+    }
+    
+    .ns ul li{
+        border-bottom: solid 1px #ffffff;
+        list-style: none;
+        margin: 0 auto;
+        margin-top: 30px;
         width: 100%;
-        max-width: none;
         padding: 15px 0;
-      }
-
-      .ns span{
+    }
+    
+    .ns span{
         margin-right: 20px;
         margin-left: 0;
-      }
-
-      .ns ul li p{
+    }
+    
+    .ns ul li p{
         display: block;
       }
     
@@ -571,136 +702,355 @@ body.no-scroll {
         display: block;
         margin-bottom: 5px;
       }
-  
-    /* ===== 私たちの想い ===== */
-    .about{
-      flex-direction: column;
-      height: auto;
-      margin-bottom: 300px;
-      font-size: 14px;
-      position: relative;
-    }
-
-    .about h2{
-       text-align: center;
-        margin-bottom: 30px;
-       border-bottom: #fff 1px solid;
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-  
-    .about img {
-        width: 250px;
-        height: auto;
-        position: absolute;
-        right: 40px;
-        z-index: -9999;
-        top: 0;
-        display: none;
-        
-      }
-      
-  
-    .about-com{
-      width: 100%;
-      padding-top: 40px;
+    
+    .about img{
+    height:400px;
+    width: auto;
+    filter: brightness(60%);
+    margin-left: 100px;
+    display: none;
     }
     
-  
-
-
-        /* セクション全体を縦並びに */
-        .com-sauce,
-        .com-solt,
-        .com-cl{
-          flex-direction: column;
-          height: auto;
-          margin-bottom: 100px;
-          position: relative;
-          margin-bottom: 200px;
-        }
+    .about{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 300px;
+        display: flex;
+        line-height: 3em;
+    }
+    
+    
+    
+    .about-com{
+        width: 550px;
+        margin: 0 auto; 
+        padding-top: 130px;
+    }
+    .about h2{
+        font-size: 24px;
+        width: 100%;
+        border-bottom: #fff solid 1px;
+        text-align: center;
+    }
+    
+    .about p{
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    max-width: 26ch;
+    margin-top: 20px;
+    line-height: 2;
+    }
+    
+    .Commitment{
+        width: 100%;
+        height: auto;
+        margin-bottom: 200px;
+        font-size: 18px;
+    }
+    
+    .Commitment img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .Commitment h2{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .Commitment span{
+        font-size: 40px;
+    }
+    
+    .com-sauce{
+        display: flex;
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-bottom: 300px;
+    }
+    
+    .sauce-about{
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    .sauce-about p{
+        margin-top: 60px;
+        margin-left:40px ;
+        line-height: 2em;
+    }
+    
+    
+    .com-sauce img{
+        height: 300px;
+        width: auto;
+    }
+    
+    .com-solt{
+        display: flex;
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-bottom: 200px;
+        
+    }
+    
+    .solt-about{
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    
+    .solt-about p{
+        margin-top: 60px;
+        margin-left:40px ;
+        line-height: 2em;
+    }
+    
+    .com-solt img{
+        height: 400px;
+        width: 300px;
+        margin-left: 10%;
+    }
+    
+    .com-cl{
+        display: flex;
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        font-size: 18px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .cl-about{
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    
+    .cl-about p{
+        margin-top: 60px;
+        margin-left:40px ;
+        line-height: 2em;
+    }
+    
+    .com-cl img{
+        height: 400px;
+        width: 350px;
+    }
+            .com-sauce,
+            .com-solt,
+            .com-cl{
+              flex-direction: column;
+              height: auto;
+              margin-bottom: 100px;
+              position: relative;
+              margin-bottom: 200px;
+            }
+          
+            /* タイトル＋画像を横並びにする */
+            .sauce-about,
+            .solt-about,
+            .cl-about{
+              display: flex;
+              flex-direction: column;  /* ← ここがポイント */
+              width: 100%;
+              margin: 0;
+              font-size: 14px;
+    
+            }
+          
+            /* h2と画像を横並び */
+            .sauce-about h2,
+            .solt-about h2,
+            .cl-about h2{
+              -webkit-writing-mode: vertical-lr; /* Safari */
+              writing-mode: vertical-lr;
+              text-orientation: upright;
+              font-size: 20px;
+              margin: 0;
+              order: -1;
+              margin-left: 25px;
+              margin-bottom: 60px;
+            }
+          
+            /* 画像をh2の横に持ってくる */
+            .com-sauce,
+            .com-solt,
+            .com-cl{
+              display: flex;
+            }
+          
+            .com-sauce img,
+            .com-solt img,
+            .com-cl img{
+              width: 200px;
+              height: auto;
+              margin-left: 20px;
+              position: absolute;
+              right: 10px;
+            }
+    
+            .com-sauce img{
+                width: 170px;
+                top: 40px;
+            }
+    
+            .com-solt img{
+                width: 130px;
+                top: 30px;right: 20px;
+            }
+    
+            .com-cl img{
+                top: 30px;
+                width: 150px;
+            }
+          
+            /* 説明文は下に */
+            .sauce-about p,
+            .solt-about p,
+            .cl-about p{
+              margin-top: 0px;
+              line-height: 1.8;
+              width: 30ch;
+              text-align: center;
+              margin: 0 auto;
+            }
+          
+            .about span{
+                font-size: 24px;
+            }
+    
+    
+    /*ここからスライドショー*/
+    
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 250px;
+        text-align: center;
+      }
       
-        /* タイトル＋画像を横並びにする */
-        .sauce-about,
-        .solt-about,
-        .cl-about{
-          display: flex;
-          flex-direction: column;  /* ← ここがポイント */
-          width: 100%;
-          margin: 0;
-          font-size: 16px;
-
-        }
+      .container h2{
+        font-size: 24px;
+        font-weight: bold;
+      }
+    
+      .swiper{
+        margin-top: 100px;
+      }
+    
+      /* スライダーのwrapper */
+      .infinite-slider .swiper-wrapper {
+        transition-timing-function: linear;
+      }
       
-        /* h2と画像を横並び */
-        .sauce-about h2,
-        .solt-about h2,
-        .cl-about h2{
-          -webkit-writing-mode: vertical-lr; /* Safari */
-          writing-mode: vertical-lr;
-          text-orientation: upright;
-          font-size: 24px;
-          margin: 0;
-          order: -1;
-          margin-left: 50px;
-          margin-bottom: 60px;
-        }
+      /* スライド */
+      .infinite-slider .swiper-slide {
+        height: 250px !important; /* 高さを指定 */
+        width: auto !important;
+      }
       
-        /* 画像をh2の横に持ってくる */
-        .com-sauce,
-        .com-solt,
-        .com-cl{
-          display: flex;
-        }
-      
-        .com-sauce img,
-        .com-solt img,
-        .com-cl img{
-          width: 200px;
-          height: auto;
-          margin-left: 20px;
-          position: absolute;
-          right: 30px;
-        }
-
-        .com-sauce img{
-            width: 240px;
-            top: 40px;
-        }
-
-        .com-solt img{
-            width: 180px;
-            top: 30px;
-        }
-
-        .com-cl img{
-            top: 30px;
-        }
-      
-        /* 説明文は下に */
-        .sauce-about p,
-        .solt-about p,
-        .cl-about p{
-          margin-top: 20px;
-          line-height: 1.8;
-        }
-      
-
-        .container{
-            margin-top: 200px;
-        }
-
-        .container h2{
-            font-size: 25px;
-
-        }
-
-        .container img {
-            width: 150px;
-        }
-
-  
-    /* ===== 店舗情報 ===== */
+      /* スライド内の画像 */
+      .infinite-slider .swiper-slide img {
+        width: auto;
+        height: 80%;
+        margin-right: 50px;
+      }
+    
+    
+      /*ここまでスライドショー*/
+    
+      .menu{
+        width: 100%;
+        height: auto;
+        margin-top:100px;
+        margin-bottom: 100px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .button {
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+        color: #000;
+        display: inline-block;
+        font-weight: bold;
+        padding: auto;
+        text-decoration: none;
+        transition: .3s;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        padding-top: 13px;
+        
+    }
+    
+    .button{
+        font-size: 16px;
+    }
+    
+    .button:hover {
+        opacity: .9;
+    }
+    
+    
+    .information{
+        width: 80%;
+        height: 600px;
+        font-size: 20px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+        margin-top: 300px;
+    }
+    
+    .information h2{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .inf{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-weight: light;
+        margin-left: 300px;
+    }
+    
+    .line{
+    width: 100%;
+    padding-top: 40px;
+    }
+    
+    .line p{
+        width: 70%;
+        border-bottom: 1px dotted #fff;
+        padding-bottom: 20px;
+    }
+    
+    .line span{
+        margin-right: 100px;
+    }
+    
+    .span-2{
+    margin-left: 180px;
+    font-size: 14px;
+    display: inline-block;
+    width: 13em;  /* 文字数基準で安定 */
+    }
+    
+    .span-3{
+        margin-left: 80px;
+    }
+    
     .information{
         width: 100%;
         height: auto;
@@ -708,31 +1058,53 @@ body.no-scroll {
         margin: 0 auto;
         margin-bottom: 80px;
     }
-
+    
     .information p{
-        font-size: 18px;
-
+        font-size: 14px;
+    
     }
     .inf{
       width: 70%;
       margin: 0 auto;
       
     }
-  
+    
     .line span{
       margin-right: 20px;
+      
     }
     
     .line p{
         width: 100%;
     }
-
+    
     .span-2{
-        margin-left: 90px;
+        margin-left: 75px;
     }
-
+    
     .span-3{
-        margin-left: 70px;
+        margin-left: 55px;
     }
+    
+    footer{
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        background: #000;
+        color: #fff;
+    }
+    
+    /* メニュー表示中は背景スクロール禁止 */
+    body.no-scroll {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      #menu-btn-check {
+        display: none;
+    }
+    
+    
   }
   
