@@ -119,6 +119,13 @@ body {
 }
 
 @media (max-width: 480px){
+
+    body{
+       
+            writing-mode: horizontal-tb;
+            text-orientation: mixed;
+          
+    }
     .kushi-btn{
         background: #fff;
         color: #000;

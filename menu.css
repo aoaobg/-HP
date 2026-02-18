@@ -64,7 +64,8 @@ body {
 
 .button{
     border: #000 1px solid;
-    width: 250px;
+    width: auto;
+    
 }
 
 .kushi-btn{
@@ -96,10 +97,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.kushi-menu p{
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
+
 
 
 
@@ -139,6 +137,7 @@ footer p{
     background: #fff;
     border: #000 1px solid;
     margin-bottom: 60px;
+   
 }
 
 .food-btn{
@@ -146,16 +145,28 @@ footer p{
     display: flex;
     text-align: center;
     margin: 0 auto 100px;
-    gap: 10px;
+    gap: 40px;
     padding-top: 50px;
     font-size: 20px;
     justify-content: center;
     height: 60px;
+    flex-shrink: 0;
 }
 
 .button{
     border: #000 1px solid;
-    width: 110px;
+    width: 300px;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    flex-shrink: 0;
+}
+
+a{
+    width: auto;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    flex-shrink: 0;
+    
 }
 
 .kushi-btn{
@@ -164,7 +175,10 @@ footer p{
 }
 
 
-
+.kushi-menu p{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
 
 .kushi{
     width: 100%;
@@ -245,7 +259,8 @@ footer p{
     
     .button{
         border: #000 1px solid;
-        width: 110px;
+        width: 90px;
+        font-size: 14px;
     }
     
     .kushi-btn{
