@@ -120,7 +120,7 @@ body {
 
 @media (max-width: 480px){
 
-    body{
+    .main-menu p{
        
             writing-mode: horizontal-tb;
             text-orientation: mixed;
@@ -160,10 +160,7 @@ body {
             margin: 0 auto;
             justify-content: center;
         }
-        
-        
-    
-    
+
     .main-menu p{
         
         line-height: 1.8;
