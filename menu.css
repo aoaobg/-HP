@@ -245,23 +245,32 @@ footer p{
         margin-bottom: 60px;
     }
     
-    .food-btn{
-        width: 100%;
-        display: flex;
-        text-align: center;
-        margin: 0 auto 100px;
-        gap: 10px;
-        padding-top: 50px;
-        font-size: 20px;
-        justify-content: center;
-        height: 60px;
-    }
-    
-    .button{
-        border: #000 1px solid;
-        width: 60px;
-        font-size: 14px;
-    }
+    /* ボタンの親 */
+  .food-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;   /* ← 縦並び */
+    align-items: center;      /* ← 中央揃え */
+    gap: 20px;                /* ← ボタン間の余白 */
+    margin: 0 auto 60px;
+    padding-top: 40px;
+    height: auto;             /* ← 高さ固定を解除 */
+  }
+
+  /* ボタン本体 */
+  .button{
+    width: 80%;               /* ← 画面の80%幅 */
+    max-width: 300px;         /* ← 広がりすぎ防止 */
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* aタグもブロック化（重要） */
+  .button a{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
     
     .kushi-btn{
         background: #000;
