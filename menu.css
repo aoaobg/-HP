@@ -259,7 +259,7 @@ footer p{
     
     .button{
         border: #000 1px solid;
-        width: 80px;
+        width: 60px;
         font-size: 14px;
     }
     
@@ -296,7 +296,7 @@ footer p{
     
     .kushi-menu p{
         writing-mode: horizontal-tb !important;
-    text-orientation: mixed;
+        text-orientation: mixed;
     }
     
     
@@ -316,12 +316,6 @@ footer p{
     
     
     
-    
-    
-    
-      
-      
-      
 }
 
 
