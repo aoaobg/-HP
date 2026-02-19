@@ -219,6 +219,7 @@ footer p{
 }
 
 @media (max-width: 480px){
+    
     .menu-logo img{
         width: 100%;
         height: 200px;
