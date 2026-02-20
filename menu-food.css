@@ -245,6 +245,7 @@ body {
     .sime{
     display: inline-block;
     text-align: left;
+    width: 80%;
     margin: 0 auto;
 }
     
