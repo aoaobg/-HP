@@ -133,10 +133,7 @@ header img{
     text-align: center;
 }
 
-.menu-content img{
-   margin-top: 60px;
-   height: 80px;
-}
+
 .menu-content ul {
     padding: 100px 10px 0;
     
@@ -515,6 +512,13 @@ body.no-scroll {
 
 @media (max-width: 480px){
 
+    #about,
+#Commitment,
+#news,
+#food-menu{
+  scroll-margin-top: 150px; /* header 高さ */
+}
+
     header{
         position: sticky;
         top: 0;
@@ -592,6 +596,7 @@ body.no-scroll {
     }
     .menu-content ul {
         padding: 100px 10px 0;
+        padding-top: 50px;
         
     }
     .menu-content ul li {
