@@ -206,8 +206,18 @@ h3{
     .sake,
     .wine
     {
+        width: auto;
         height: auto;
+        font-size: 16px;
+        margin: 0 auto;
         margin-bottom: 80px;
+    }
+
+    .soft{
+         width: auto;
+        height: auto;
+        font-size: 16px;
+        margin: 0 auto;
     }
     
     .plum{
@@ -234,4 +244,10 @@ h3{
     .T{
         gap: 30px;
     }    
+
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
