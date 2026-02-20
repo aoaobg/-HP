@@ -160,7 +160,7 @@ h3{
     }
     
     .drink span{
-        margin-top: 30px;
+        margin-left: 30px;
     }
     
     
@@ -204,8 +204,7 @@ h3{
     .suger,
     .plum,
     .sake,
-    .wine,
-    .soft
+    .wine
     {
         height: auto;
         margin-bottom: 80px;
