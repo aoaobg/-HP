@@ -59,4 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   });
   
-  
+   // 「reloaded」という印が保存されていない場合のみ実行
+   if (!sessionStorage.getItem('reloaded')) {
+    sessionStorage.setItem('reloaded', 'true'); // 印を付ける
+    window.location.reload();                   // リロード実行
+  }
