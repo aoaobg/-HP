@@ -126,6 +126,12 @@ body {
             text-orientation: mixed;
           
     }
+
+    .sasimi,
+    .sarada,
+    .sime{writing-mode: horizontal-tb;
+        text-orientation: mixed;}
+        
     .kushi-btn{
         background: #fff;
         color: #000;

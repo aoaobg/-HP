@@ -109,7 +109,7 @@ h3{
 
 @media (max-width: 480px){
 
-    body{
+    .F > div{
             writing-mode: horizontal-tb;
             text-orientation: mixed;
           
