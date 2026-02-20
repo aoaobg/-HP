@@ -131,7 +131,7 @@ body {
     .sarada,
     .sime{writing-mode: horizontal-tb;
         text-orientation: mixed;}
-        
+
     .kushi-btn{
         background: #fff;
         color: #000;
@@ -180,7 +180,7 @@ body {
     .main-2{
         width: 85%;
         margin: 0 auto;
-        
+        display: block;
     }
     
     .sasimi{
