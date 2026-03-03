@@ -642,6 +642,8 @@ body.no-scroll {
     #menu-btn-check:checked ~ .menu-content {
         left: 0;/*メニューを画面内へ*/
     }
+
+    .menu-content ul {padding-top: 50px;}
     
     /*ここまでハンバーガーメニュー*/
     
