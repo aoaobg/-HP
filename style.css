@@ -597,7 +597,6 @@ body.no-scroll {
     .menu-content ul {
         padding: 100px 10px 0;
         padding-top: 50px;
-        
     }
     .menu-content ul li {
         border-bottom: solid 1px #ffffff;
@@ -643,7 +642,7 @@ body.no-scroll {
         left: 0;/*メニューを画面内へ*/
     }
 
-    .menu-content ul {padding-top: 50px;}
+    .menu-content ul {padding-top: 0px;}
     
     /*ここまでハンバーガーメニュー*/
     
